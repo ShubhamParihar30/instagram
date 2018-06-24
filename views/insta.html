@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INSTAGRAM NEW</title>
+</head>
+<body>
+<!-- validation for matching password and confirm password ><-->
+<script type="text/javascript" >
+  	function myfunction(form2)
+  	{
+   if(form2.p1.value==form2.p2.value){return true;}
+   else {return false;}
+      
+  }	
+  </script>
+<!-- form for login ><-->
+<div class="header"><h2>INSTAGRAM NEW</h2></div>
+ <div>
+  <form action="interdata" method="post" name="form1" id="form1">
+  <br> LOGIN HERE: </br>
+  <br><input type="email" name="email" placeholder="email address" required></br>
+  <br> <input type="password" name="password" placeholder="password" required></br>
+  <br> <input type="submit" name="submit" value="Login" ></br>
+
+  </form>
+ </div>
+<!-- form for signup ><-->
+ <div>  
+ <form action="signup" onsubmit="return myfunction(this);" name="form2" method="post" id="form2">
+  <br> SIGNUP HERE: </br> 
+  <br><input type="email" name="email" placeholder="email address" required></br>
+  <br><input type="text" name="name" placeholder="name" required></br>
+  <br> <input type="password" name="password" placeholder="password" id="p1" required></br>
+  <br> <input type="password" name="confirm-password" placeholder="confirm-password" id="p2" required></br>
+  <br> <input type="submit" name="submit1" value="SignUp"></br>
+  </form>
+ </div>
+  
+   
+  
+</body>
+</html>
+
+
+
+
+
+

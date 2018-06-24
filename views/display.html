@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function like()
+{
+   
+}
+var ourRequest=new XMLHttpRequest();
+ourRequest.open('POST','localhost:3000/uploaded')
+ourRequest.onLoad=function()
+{
+var ourData=ourRequest.responseText();
+console.log(ourData[0]);
+}
+ourRequest.send();
+
+</script>
+<div class="product_block">
+<img src="images/nature.jpeg" alt="still showing">
+<button class="w3-button w3-circle w3-black" onclick="like()"" action="">like</button>
+<button type="submit" action="" onclick="comment()" ><textarea id="t2" placeholder="comment here"></textarea>Comment</button>
+</div>
+<form action="/">
+<br><input type="submit" value="Logout"></br>
+</form>
+</body>
+</html>
